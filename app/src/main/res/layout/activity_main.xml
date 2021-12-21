@@ -11,7 +11,8 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="214dp">
+        tools:layout_editor_absoluteY="214dp"
+        android:theme="@style/CardView.Dark">
 
         <TextView
             android:id="@+id/textView"
@@ -32,24 +33,15 @@
             android:gravity="center_horizontal"
             android:text="Add"
             tools:layout_editor_absoluteX="13dp"
-            tools:layout_editor_absoluteY="7dp" />
+            tools:layout_editor_absoluteY="7dp"
+            />
 
-        <Button
-            android:id="@+id/button2"
+        <TextView
+            android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:gravity="center_horizontal"
-            android:text="Next"
-            tools:layout_editor_absoluteX="151dp"
-            tools:layout_editor_absoluteY="55dp" />
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:text="Prev"
-            tools:layout_editor_absoluteX="151dp"
-            tools:layout_editor_absoluteY="95dp" />
+            android:text="Our catalog" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

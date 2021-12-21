@@ -13,7 +13,7 @@ open class Coctails : Pub {
     }
 
     fun alcogolicOrNonAlcogolic() {
-        if (degree > 0)
+        if (getDegree() > 0)
             println("It's alcogol coctail")
         else
             println("It's a non alcogol coctail")

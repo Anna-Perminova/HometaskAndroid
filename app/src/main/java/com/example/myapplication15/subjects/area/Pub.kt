@@ -3,10 +3,10 @@ package com.example.myapplication15.subjects.area
 import android.icu.text.CaseMap
 
 open class Pub(
-    var name: String,
-    var degree: Int,
-    var sizeMl: Int,
-    var cost: Int,
+    private var name: String,
+    private var degree: Int,
+    private var sizeMl: Int,
+    private var cost: Int,
 ) {
     open fun lowOrStongAlcogol() {
         if (degree > 15)
@@ -25,5 +25,35 @@ open class Pub(
 
     override fun toString(): String {
         return "Pub(name='$name', degree=$degree, sizeMl=$sizeMl, cost=$cost)"
+    }
+
+    fun getName(): String {
+        return name
+    }
+
+    fun setName(name: String) {
+        this.name =name
+    }
+
+    open fun getDegree(): Int {
+        return degree
+    }
+
+    open fun setDegree(degree: Int) {
+        this.degree=degree
+    }
+    fun getSizeMl(): Int {
+        return sizeMl
+    }
+
+    fun setSizeMl(sizeMl: Int) {
+        this.sizeMl =sizeMl
+    }
+    fun getCost(): Int {
+        return cost
+    }
+
+    fun setCost(cost: Int) {
+        this.cost =cost
     }
 }
